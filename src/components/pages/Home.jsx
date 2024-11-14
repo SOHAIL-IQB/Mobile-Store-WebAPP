@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../Header";
-import muffinImg from '../../assets/products/Muffin.jpg';
+import muffinImg from '/products/Muffin.jpg';
 
 function Home() {
   return (

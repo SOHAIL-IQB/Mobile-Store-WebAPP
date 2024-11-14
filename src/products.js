@@ -5,7 +5,7 @@ export const CAKES = [
     price: 500,
     description:
       "A rich and creamy Butterscotch cake topped with caramel drizzle and crunchy praline pieces, perfect for any celebration.",
-    imageUrl: "src/assets/products/ButterScotch_1.jpg",
+    imageUrl: "/products/ButterScotch_1.jpg",
     weight: "1kg",
     ingredients: ["Butter", "Sugar", "Caramel", "Cream", "Praline"],
     category: "Classic Cakes",
@@ -18,7 +18,7 @@ export const CAKES = [
     price: 600,
     description:
       "A decadent chocolate cake with layers of rich chocolate ganache and a glossy truffle glaze.",
-    imageUrl: "src/assets/products/ButterScotch_2.jpg",
+    imageUrl: "/products/ButterScotch_2.jpg",
     weight: "1kg",
     ingredients: ["Cocoa", "Chocolate", "Butter", "Cream", "Sugar"],
     category: "Chocolate Cakes",
@@ -31,7 +31,7 @@ export const CAKES = [
     price: 550,
     description:
       "A classic red velvet cake with smooth cream cheese frosting, perfect for any special occasion.",
-    imageUrl: "src/assets/products/ButterScotch_3.jpg",
+    imageUrl: "/products/ButterScotch_3.jpg",
     weight: "1kg",
     ingredients: ["Flour", "Cocoa", "Buttermilk", "Cream Cheese", "Sugar"],
     category: "Classic Cakes",
@@ -44,7 +44,7 @@ export const CAKES = [
     price: 450,
     description:
       "A light and fluffy vanilla cake infused with real vanilla beans, topped with whipped cream frosting.",
-    imageUrl: "src/assets/products/ButterScotch_4.jpg",
+    imageUrl: "/products/ButterScotch_4.jpg",
     weight: "1kg",
     ingredients: ["Flour", "Vanilla", "Butter", "Sugar", "Eggs"],
     category: "Classic Cakes",
@@ -57,7 +57,7 @@ export const CAKES = [
     price: 500,
     description:
       "A tropical pineapple-flavored cake layered with whipped cream and chunks of fresh pineapple.",
-    imageUrl: "src/assets/products/PinkWhite_1.jpg",
+    imageUrl: "/products/PinkWhite_1.jpg",
     weight: "1kg",
     ingredients: ["Pineapple", "Flour", "Cream", "Sugar", "Butter"],
     category: "Fruit Cakes",
@@ -70,7 +70,7 @@ export const CAKES = [
     price: 550,
     description:
       "A delightful strawberry cake with swirls of fresh strawberry compote and whipped frosting.",
-    imageUrl: "src/assets/products/PinkWhite_2.jpg",
+    imageUrl: "/products/PinkWhite_2.jpg",
     weight: "1kg",
     ingredients: ["Strawberries", "Flour", "Cream", "Sugar", "Butter"],
     category: "Fruit Cakes",
@@ -83,7 +83,7 @@ export const CAKES = [
     price: 600,
     description:
       "A luscious mango-flavored cake layered with smooth mango mousse and topped with fresh mango slices.",
-    imageUrl: "src/assets/products/Purple_1.jpg",
+    imageUrl: "/products/Purple_1.jpg",
     weight: "1kg",
     ingredients: ["Mango", "Cream", "Flour", "Butter", "Sugar"],
     category: "Fruit Cakes",
@@ -96,7 +96,7 @@ export const CAKES = [
     price: 650,
     description:
       "A rich hazelnut cake topped with crunchy praline and smooth chocolate ganache.",
-    imageUrl: "src/assets/products/Purple_2.jpg",
+    imageUrl: "/products/Purple_2.jpg",
     weight: "1kg",
     ingredients: ["Hazelnut", "Chocolate", "Flour", "Cream", "Butter"],
     category: "Premium Cakes",
@@ -109,7 +109,7 @@ export const CAKES = [
     price: 450,
     description:
       "A tangy lemon cake with zesty lemon glaze and light whipped frosting.",
-    imageUrl: "src/assets/products/RaspAlmond_1.jpg",
+    imageUrl: "/products/RaspAlmond_1.jpg",
     weight: "1kg",
     ingredients: ["Lemon", "Flour", "Butter", "Sugar", "Eggs"],
     category: "Classic Cakes",
@@ -122,7 +122,7 @@ export const CAKES = [
     price: 600,
     description:
       "A moist cake bursting with fresh blueberries and topped with blueberry compote.",
-    imageUrl: "src/assets/products/RaspAlmond_2.jpg",
+    imageUrl: "/products/RaspAlmond_2.jpg",
     weight: "1kg",
     ingredients: ["Blueberries", "Flour", "Cream", "Sugar", "Butter"],
     category: "Fruit Cakes",
@@ -135,7 +135,7 @@ export const CAKES = [
     price: 700,
     description:
       "A rich caramel cake with crunchy pecan topping and smooth caramel drizzle.",
-    imageUrl: "src/assets/products/Red_1.jpg",
+    imageUrl: "/products/Red_1.jpg",
     weight: "1kg",
     ingredients: ["Pecans", "Caramel", "Flour", "Cream", "Sugar"],
     category: "Premium Cakes",
@@ -148,7 +148,7 @@ export const CAKES = [
     price: 550,
     description:
       "A flavorful coffee-infused cake with crunchy walnuts and a coffee cream frosting.",
-    imageUrl: "src/assets/products/Red_2.jpg",
+    imageUrl: "/products/Red_2.jpg",
     weight: "1kg",
     ingredients: ["Coffee", "Walnuts", "Flour", "Butter", "Sugar"],
     category: "Premium Cakes",
@@ -161,7 +161,7 @@ export const CAKES = [
     price: 500,
     description:
       "A soft vanilla cake with swirls of raspberry and topped with raspberry compote.",
-    imageUrl: "src/assets/products/Red_3.jpg",
+    imageUrl: "/products/Red_3.jpg",
     weight: "1kg",
     ingredients: ["Raspberries", "Flour", "Cream", "Sugar", "Butter"],
     category: "Fruit Cakes",
@@ -174,7 +174,7 @@ export const CAKES = [
     price: 600,
     description:
       "A classic Black Forest cake with layers of chocolate sponge, whipped cream, and cherries.",
-    imageUrl: "src/assets/products/RedWhite.jpg",
+    imageUrl: "/products/RedWhite.jpg",
     weight: "1kg",
     ingredients: ["Chocolate", "Cherries", "Cream", "Flour", "Sugar"],
     category: "Chocolate Cakes",
@@ -187,7 +187,7 @@ export const CAKES = [
     price: 750,
     description:
       "A luxurious Tiramisu cake with layers of espresso-soaked sponge and mascarpone cream.",
-    imageUrl: "src/assets/products/ButterScotch_1.jpg",
+    imageUrl: "/products/ButterScotch_1.jpg",
     weight: "1kg",
     ingredients: ["Espresso", "Mascarpone", "Flour", "Cream", "Sugar"],
     category: "Premium Cakes",
@@ -200,7 +200,7 @@ export const CAKES = [
 //     price: 450,
 //     description:
 //       "A refreshing orange-flavored cake with tangy orange glaze and whipped cream topping.",
-//     imageUrl: "src/assets/products/ButterScotch_1.jpg",
+//     imageUrl: "/products/ButterScotch_1.jpg",
 //     weight: "1kg",
 //     ingredients: ["Orange", "Flour", "Butter", "Sugar", "Eggs"],
 //     category: "Classic Cakes",
