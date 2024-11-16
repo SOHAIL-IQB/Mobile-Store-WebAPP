@@ -4,7 +4,7 @@ import { CAKES } from "../../products";
 
 function Featured() {
   return (
-    <div id="featured" className="px-16 w-full py-16">
+    <div id="featured" className="mt-8 px-16 w-full py-16">
       <h2 className="text-6xl font-bold text-center mb-16">Featured</h2>
       <ul className="flex flex-wrap justify-center gap-20">
         {CAKES.map((cake) => {

@@ -6,12 +6,12 @@ function Home() {
   return (
     <div id="home" className="w-full h-screen">
       <Header />
-      <main className="px-16 my-16 h-3/5 flex justify-center items-center border border-black">
-        <section className="content md:w-1/2 h-full px-12 py-16 border border-red-500">
+      <main className="px-16 my-16 h-3/5 flex justify-center items-center">
+        <section className="content md:w-1/2 h-full px-12 py-16">
           <h2 className="text-4xl md:text-6xl font-bold mb-8">
             Your Sweet Journey Begins Here
           </h2>
-          <p className="md:text-xl mb-8">
+          <p className="hidden sm:block md:text-xl mb-8">
             BakeLush invites you to explore a world of delectable cakes, each
             crafted with love and care. Celebrate life's sweetest moments with
             our premium cakes, baked fresh and delivered right to your door.
