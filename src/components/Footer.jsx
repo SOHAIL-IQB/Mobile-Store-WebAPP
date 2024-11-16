@@ -13,7 +13,7 @@ function Footer() {
         </p>
       </section>
 
-      <section id="quick-links" className="pl-8">
+      <section id="quick-links" className="md:pl-8">
         <h3 className="text-2xl font-semibold mb-4">Quick Links</h3>
         <ul className="space-y-2 text-md">
           <li>
