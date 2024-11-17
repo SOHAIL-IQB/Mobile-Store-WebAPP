@@ -1,9 +1,12 @@
-import { createContext, useReducer } from "react";
+import { createContext, useReducer, useState } from "react";
 
 const CartContext = createContext({
   items: [],
+  isOpen: false,
   addItem: (item) => {},
   removeItem: (id) => {},
+  showCart: () => {},
+  hideCart: () => {},
 });
 
 function cartReducer(state, action) {
@@ -50,6 +53,15 @@ export function CartContextProvider({ children }) {
   const [cartItems, cartDispatch] = useReducer(cartReducer, {
     items: [],
   });
+  const [isCartOpen, setIsCartOpen] = useState(false);
+
+  function showCart() {
+    setIsCartOpen(true);
+  }
+
+  function hideCart() {
+    setIsCartOpen(false);
+  }
 
   function addItem(item) {
     cartDispatch({ type: "ADD_ITEM", payload: { item: item } });
@@ -59,12 +71,13 @@ export function CartContextProvider({ children }) {
     cartDispatch({ type: "REMOVE_ITEM", payload: { id: id } });
   }
 
-  console.log(cartItems);
-
   const cartCtx = {
     items: cartItems.items,
+    isOpen: isCartOpen,
     addItem,
     removeItem,
+    showCart,
+    hideCart,
   };
 
   return (

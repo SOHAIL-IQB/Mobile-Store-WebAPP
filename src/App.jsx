@@ -1,3 +1,4 @@
+import Cart from "./components/Cart";
 import Footer from "./components/Footer";
 import Featured from "./components/pages/Featured";
 import Home from "./components/pages/Home";
@@ -10,7 +11,8 @@ function App() {
       <Home />
       <Featured />
       <Products />
-      <Footer />
+      <Footer />    
+      <Cart />  
     </CartContextProvider>
   );
 }

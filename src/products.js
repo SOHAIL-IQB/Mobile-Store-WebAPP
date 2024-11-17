@@ -1,7 +1,7 @@
 export const CAKES = [
   {
     id: 1,
-    name: "ButterScotch",
+    name: "BakeLush Special",
     price: 500,
     description:
       "A rich and creamy Butterscotch cake topped with caramel drizzle and crunchy praline pieces, perfect for any celebration.",

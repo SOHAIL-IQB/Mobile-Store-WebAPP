@@ -8,6 +8,10 @@ function Header() {
     return total + item.quantity;
   }, 0);
 
+  function handleShowCart() {
+    cartCtx.showCart();
+  }
+
   return (
     <header className="flex px-16 py-8 justify-between items-center">
       <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold">
@@ -22,7 +26,7 @@ function Header() {
           </li>
           <li>Contact</li>
         </ul>
-        <button className="relative px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors duration-200 shadow-lg">
+        <button onClick={handleShowCart} className="relative px-4 py-2 bg-red-600 text-white rounded-lg outline-none hover:bg-red-700 transition-colors duration-200 shadow-lg">
           <span className="material-symbols-outlined text-2xl">
             shopping_cart
           </span>
