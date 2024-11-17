@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import CartContext from "../../store/CartContext";
 
 function Card({cake}) {
+  const cartCtx = useContext(CartContext);
+
+  function handleAddItemToCart() {
+    cartCtx.addItem(cake);
+  }
+  
   return (
     <div className="w-80 h-90 p-3 flex flex-col gap-1">
       <div className="mb-4">
@@ -14,7 +21,7 @@ function Card({cake}) {
           </div>
           <span className="font-bold  text-red-600">Rs. {cake.price}</span>
         </div>
-        <button className="hover:bg-slate-700 text-gray-50 bg-slate-800 py-2">
+        <button onClick={handleAddItemToCart} className="hover:bg-slate-700 text-gray-50 bg-slate-800 py-2">
           Add to cart
         </button>
       </div>

@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import CartContext from "../store/CartContext";
 
 function Header() {
+  const cartCtx = useContext(CartContext);
+
+  const totalCartItems = cartCtx.items.reduce((total, item) => {
+    return total + item.quantity;
+  }, 0);
+
   return (
     <header className="flex px-16 py-8 justify-between items-center">
       <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold">
@@ -15,8 +22,13 @@ function Header() {
           </li>
           <li>Contact</li>
         </ul>
-        <button className="pt-2">
-          <span className="material-symbols-outlined">shopping_cart</span>
+        <button className="relative px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors duration-200 shadow-lg">
+          <span className="material-symbols-outlined text-2xl">
+            shopping_cart
+          </span>
+          <span className="absolute -top-2 -right-4 bg-white text-red-700 text-md rounded-full px-3 py-1 shadow-md">
+            {totalCartItems}
+          </span>
         </button>
       </nav>
     </header>

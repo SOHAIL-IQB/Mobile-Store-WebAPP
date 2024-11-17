@@ -16,7 +16,7 @@ function Home() {
             crafted with love and care. Celebrate life's sweetest moments with
             our premium cakes, baked fresh and delivered right to your door.
           </p>
-          <button className="px-8 py-4 mt-8 sm:mt-0 text-nowrap md:text-xl bg-red-600 hover:bg-red-700 text-white">Find your dessert</button>
+          <button className="px-8 py-4 mt-8 sm:mt-0 text-nowrap md:text-xl bg-red-600 hover:bg-red-700 text-white transition-colors duration-200 shadow-lg">Find your dessert</button>
         </section>
         {/* <section className="hidden md:block home-image w-1/2 p-28">
             <img src={muffinImg} alt="Muffin" className="rounded-full"/>
