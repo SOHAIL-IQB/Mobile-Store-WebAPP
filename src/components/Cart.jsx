@@ -17,6 +17,17 @@ function Cart() {
     cartCtx.addItem(item);
   }
 
+  function handleCheckout() {
+    if (cartCtx.items.length === 0) {
+        alert('Add items to your cart to checkout.');
+        cartCtx.hideCart();
+        return;
+    }
+    alert('Order placed successfully! 🎉');
+    cartCtx.removeAllItems();
+    cartCtx.hideCart();
+  }
+
   return (
     <Modal open={cartCtx.isOpen}>
       <header className="text-4xl mb-8 flex justify-between items-center">
@@ -33,10 +44,10 @@ function Cart() {
         {cartCtx.items.map((item) => (
           <li
             key={item.id}
-            className="w-full p-4 flex justify-between items-center border-b border-white"
+            className="w-full py-4 md:p-4 flex justify-between items-center border-b border-white"
           >
-            <span className="w-1/2 px-2 flex items-center gap-4">
-              <span className="hidden lg:block w-20 h-20 flex-shrink-0">
+            <span className="w-2/3 flex items-center gap-4">
+              <span className="w-[30%] flex-shrink-0">
                 <img
                   src={item.imageUrl}
                   alt={item.name}
@@ -45,16 +56,16 @@ function Cart() {
               </span>
               <span>{item.name}</span>
             </span>
-            <span className="text-md flex flex-col lg:flex-row items-center gap-4">
+            <span className="text-md flex flex-col lg:flex-row items-center gap-2 md:gap-4">
               <span className="font-semibold">Rs. {item.price}</span>
-              <span>
+              <span className="flex">
                 <button
                   onClick={() => handleDecreseItemQuantity(item.id)}
                   className="px-2 text-red-700 bg-white rounded hover:bg-gray-200"
                 >
                   -
                 </button>
-                <span className="px-4">{item.quantity}</span>
+                <span className="px-2 md:px-4">{item.quantity}</span>
                 <button
                   onClick={() => handleIncreaseItemQuantity(item)}
                   className="px-2 text-red-700 bg-white rounded hover:bg-gray-200"
@@ -67,11 +78,11 @@ function Cart() {
         ))}
       </ul>
 
-      <p className="w-full flex justify-between items-center text-xl font-semibold gap-2">
-        <span>
-          Total: <span>Rs. {cartTotal}</span>
+      <p className="w-full flex justify-between items-center gap-2">
+        <span className="w-3/5">
+          Total: <span className="font-semibold">Rs. {cartTotal}</span>
         </span>
-        <button className="px-6 py-3 bg-white text-red-700 rounded-lg shadow-md hover:bg-gray-200 transition-transform transform hover:scale-105">
+        <button onClick={handleCheckout} className="px-2 py-2 bg-white text-red-700 rounded-lg shadow-md hover:bg-gray-200 transition-transform transform hover:scale-105">
           Checkout
         </button>
       </p>

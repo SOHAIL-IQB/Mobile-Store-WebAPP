@@ -5,6 +5,7 @@ const CartContext = createContext({
   isOpen: false,
   addItem: (item) => {},
   removeItem: (id) => {},
+  removeAllItems: () => {},
   showCart: () => {},
   hideCart: () => {},
 });
@@ -44,6 +45,8 @@ function cartReducer(state, action) {
       updatedItems[existingItemIndex] = updatedItem;
     }
     return { ...state, items: updatedItems };
+  } else if (action.type === "REMOVE_ALL_ITEMS") {
+    return { ...state, items: [] };
   }
 
   return state;
@@ -71,11 +74,16 @@ export function CartContextProvider({ children }) {
     cartDispatch({ type: "REMOVE_ITEM", payload: { id: id } });
   }
 
+  function removeAllItems() {
+    cartDispatch({ type: "REMOVE_ALL_ITEMS" });
+  }
+
   const cartCtx = {
     items: cartItems.items,
     isOpen: isCartOpen,
     addItem,
     removeItem,
+    removeAllItems,
     showCart,
     hideCart,
   };
