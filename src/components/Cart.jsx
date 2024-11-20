@@ -29,7 +29,7 @@ function Cart() {
   }
 
   return (
-    <Modal open={cartCtx.isOpen}>
+    <Modal open={cartCtx.isOpen} onClose={cartCtx.hideCart}>
       <header className="text-4xl mb-8 flex justify-between items-center">
         <h1>Your Cart</h1>
         <button

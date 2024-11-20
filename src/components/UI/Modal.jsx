@@ -1,9 +1,6 @@
-import React, { useContext, useEffect, useRef } from "react";
-import CartContext from "../../store/CartContext";
+import React, { useEffect, useRef } from "react";
 
-function Modal({ open, children }) {
-
-    const cartCtx = useContext(CartContext);
+function Modal({ open, onClose, children }) {
   const dialog = useRef();
 
   useEffect(() => {
@@ -16,7 +13,11 @@ function Modal({ open, children }) {
   }, [open]);
 
   return (
-    <dialog ref={dialog} className="w-4/5 md:w-1/2 max-h-4/5 p-8 bg-red-700 text-white backdrop:bg-black backdrop:opacity-50" onClose={cartCtx.hideCart}>
+    <dialog
+      ref={dialog}
+      className="w-4/5 md:w-1/2 max-h-4/5 p-8 bg-red-700 text-white backdrop:bg-black backdrop:opacity-50"
+      onClose={onClose}
+    >
       {children}
     </dialog>
   );
