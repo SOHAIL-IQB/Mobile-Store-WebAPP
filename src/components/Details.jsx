@@ -25,7 +25,7 @@ function Details({ cake, id, setId }) {
             </p>
             <p className="mb-4">{cake.description}</p>
             <div>
-              <p className="mb-2 font-bold">Ingredients</p>
+              <p className="mb-2 font-bold">Features</p>
               <ul className="flex flex-wrap gap-2">
                 {cake.ingredients.map((ing) => (
                   <li className="bg-white text-red-700 p-1 px-2 rounded-2xl" key={ing}>{ing}</li>

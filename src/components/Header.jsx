@@ -15,7 +15,7 @@ function Header() {
   return (
     <header className="flex px-16 py-8 justify-between items-center">
       <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold">
-        <a href="#home">BakeLush</a>
+        <a href="#home">AAMNA MOBILE</a>
       </h2>
       <nav className="flex items-center gap-8">
         <ul className="hidden text-2xl lg:flex gap-8">

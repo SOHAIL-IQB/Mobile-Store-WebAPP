@@ -5,11 +5,12 @@ function Footer() {
     <footer className="px-16 py-24 w-full h-auto bg-slate-800 text-white text-lg grid grid-cols-1 md:grid-cols-4 gap-8">
       <section>
         <h2 className="text-2xl font-bold">
-          <span>&copy;</span> BakeLush
+          <span>&copy;</span> AAMNA MOBILE
         </h2>
         <p className="mt-4 text-md">
-          Bringing joy and sweetness to your celebrations. At BakeLush, we craft
-          the finest cakes with love and premium ingredients.
+“Your gateway to the latest in mobile technology.
+We offer top-tier smartphones crafted for performance,
+style, and innovation.”
         </p>
       </section>
 
@@ -75,7 +76,7 @@ function Footer() {
           Subscribe to Our Newsletter
         </h3>
         <p className="text-sm">
-          Stay updated on the latest flavors, offers, and exclusive deals!
+        Stay updated on the latest phones, offers, and exclusive deals!
         </p>
         <form className="mt-4">
           <input
