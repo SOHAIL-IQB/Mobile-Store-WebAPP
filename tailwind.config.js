@@ -4,9 +4,10 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        home: "url('/products/MobileStore_Home.jpg')", // updated image to suit the Mobile Store theme
+        home: "url('/products/ButterScotch_4.jpg')",
       },
     },
   },
   plugins: [],
 };
+
