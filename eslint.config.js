@@ -7,6 +7,7 @@ import reactRefresh from 'eslint-plugin-react-refresh'
 export default [
   { ignores: ['dist'] },
   {
+    // Mobile Store ESLint Configuration
     files: ['**/*.{js,jsx}'],
     languageOptions: {
       ecmaVersion: 2020,
