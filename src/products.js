@@ -6,7 +6,7 @@ export const CAKES = [
     description:
       "Apple's latest flagship with an A17 Pro chip, titanium build, and a triple camera setup for stunning photography.",
     imageUrl: "https://m.media-amazon.com/images/I/81dT7CUY6GL._SL1500_.jpg",
-    storage: "1TB",
+    storage: "512 GB",
     ingredients: ["A17 Pro Chip", "8GB RAM", "4323mAh Battery", "48MP Camera", "6.7-inch Display"],
     category: "Flagship Phones",
     available: true,
