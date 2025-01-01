@@ -10,7 +10,7 @@ function Footer() {
         <p className="mt-4 text-md">
 “Your gateway to the latest in mobile technology.
 We offer top-tier smartphones crafted for performance,
-style, and innovation.”
+style, and innovation...”
         </p>
       </section>
 
