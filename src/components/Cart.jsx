@@ -83,7 +83,7 @@ function Cart() {
           Total: <span className="font-semibold">Rs. {cartTotal}</span>
         </span>
         <button onClick={handleCheckout} className="px-2 py-2 bg-white text-red-700 rounded-lg shadow-md hover:bg-gray-200 transition-transform transform hover:scale-105">
-          Checkout
+          Checkout 
         </button>
       </p>
     </Modal>
