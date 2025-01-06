@@ -8,7 +8,7 @@ function Footer() {
           <span>&copy;</span> AAMNA MOBILE
         </h2>
         <p className="mt-4 text-md">
-“Your gateway to the latest in mobile technology..
+“Your gateway to the latest in mobile technology.
 We offer top-tier smartphones crafted for performance,
 style, and innovation...”
         </p>
