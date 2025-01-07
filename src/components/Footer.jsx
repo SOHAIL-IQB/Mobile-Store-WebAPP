@@ -73,7 +73,7 @@ style, and innovation...”
 
       <section id="newsletter">
         <h3 className="text-xl font-semibold mb-4">
-          Subscribe to Our Newsletter
+          Subscribe to our Newsletter
         </h3>
         <p className="text-sm">
         Stay updated on the latest phones, offers, and exclusive deals!
